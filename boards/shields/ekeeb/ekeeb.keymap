@@ -23,11 +23,11 @@
             key-positions = <0 3>;
             bindings = <&bt BT_CLR>;
         };
-        combo_reset {
+       /* combo_reset {
             timeout-ms = <TIMEOUT>;
             key-positions = <0 1>;
             bindings = <&reset>;
-        };
+        }; devicetree error: /combos/combo_reset: undefined node label 'reset'*/
         combo_bootloader {
             timeout-ms = <TIMEOUT>;
             key-positions = <0 2>;
