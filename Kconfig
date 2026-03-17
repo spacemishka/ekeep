@@ -1,0 +1,17 @@
+menu "eKeep Compatibility Drivers"
+
+config EKEEP_GPIO_595_COMPAT
+    bool "Enable 74HC595 GPIO compatibility driver"
+    depends on GPIO && SPI
+    default y
+    help
+      Provides a local fallback implementation for zmk,gpio-595.
+      This is intended for Zephyr/ZMK combinations where upstream
+      CONFIG_GPIO_595 is unavailable.
+
+config EKEEP_GPIO_595_INIT_PRIORITY
+    int "74HC595 GPIO driver init priority"
+    default 81
+    depends on EKEEP_GPIO_595_COMPAT
+
+endmenu
