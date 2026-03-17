@@ -33,9 +33,9 @@
 #     shield: corne_left
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
 #     artifact-name: corne_left_with_logging
-#
+#     ice_nano@2.0.0//zmk
 include:
   - board: bluemicro840_v1//zmk
     shield: ekeeb
-  - board: nice_nano@2.0.0//zmk
+  - board: nice_nano//zmk
     shield: ekeeb
