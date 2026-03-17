@@ -37,5 +37,5 @@
 include:
   - board: bluemicro840_v1//zmk
     shield: ekeeb
-  - board: nice_nano//zmk
+  - board: nice_nano@2.0.0//zmk
     shield: ekeeb
